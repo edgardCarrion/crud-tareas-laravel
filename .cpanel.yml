@@ -1,4 +1,3 @@
----
 deployment:
   tasks:
     - export DEPLOYPATH=/home/agrogana/repositories/crud-tareas-laravel
