@@ -1,10 +1,10 @@
+---
 deployment:
-  tasks:
-    - export DEPLOYPATH=/home/agrogana/repositories/crud-tareas-laravel
-    - export PHP=/opt/cpanel/ea-php84/root/usr/bin/php
-    - /bin/bash -c "cd $DEPLOYPATH && $PHP /usr/local/bin/composer install --no-dev --optimize-autoloader 2>&1"
-    - /bin/bash -c "cd $DEPLOYPATH && $PHP artisan migrate --force 2>&1"
-    - /bin/bash -c "cd $DEPLOYPATH && $PHP artisan config:cache 2>&1"
-    - /bin/bash -c "cd $DEPLOYPATH && $PHP artisan route:cache 2>&1"
-    - /bin/bash -c "cd $DEPLOYPATH && $PHP artisan view:cache 2>&1"
-    - /bin/bash -c "chmod -R 775 $DEPLOYPATH/storage $DEPLOYPATH/bootstrap/cache 2>&1"
+  tasks: export DEPLOYPATH=/home/agrogana/repositories/crud-tareas-laravel export
+    PHP=/opt/cpanel/ea-php84/root/usr/bin/php /bin/bash -c "cd $DEPLOYPATH &&
+    $PHP /usr/local/bin/composer install --no-dev --optimize-autoloader 2>&1"
+    /bin/bash -c "cd $DEPLOYPATH && $PHP artisan migrate --force 2>&1" /bin/bash
+    -c "cd $DEPLOYPATH && $PHP artisan config:cache 2>&1" /bin/bash -c "cd
+    $DEPLOYPATH && $PHP artisan route:cache 2>&1" /bin/bash -c "cd $DEPLOYPATH
+    && $PHP artisan view:cache 2>&1" /bin/bash -c "chmod -R 775
+    $DEPLOYPATH/storage $DEPLOYPATH/bootstrap/cache 2>&1"
